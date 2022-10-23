@@ -1,0 +1,102 @@
+.products_solutions {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #F8F8F8;
+    padding: 64px 0px;
+    &_block {
+        display: flex;
+        flex-direction: column;
+        &_text {
+            order: 2;
+            margin-top: 48px;
+            & h3 {
+                font-family: "Montserrat", Sans-serif;
+                font-size: 28px;
+                line-height: 36px;
+                margin-bottom: 24px;
+                font-weight: 600;
+                & span {
+                    color: #0e95d8;
+                }
+            }
+            & p {
+                font-family: "Montserrat", Sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: #282828;
+                margin-bottom: 20px;
+            }
+            & a {
+                font-family: "Montserrat", Sans-serif;
+                font-weight: 600;
+                position: relative;
+                color: #282828;
+                text-decoration: none;
+                transition: all .4s ease;
+                font-size: 18px;
+                line-height: 40px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: #0e95d8;
+                    transition: all .4s ease;
+                }
+                &:hover {
+                    color: #0e95d8;
+                    transition: all .4s ease;
+                    &::before {
+                        bottom: -5px;
+                        transition: all .4s ease;
+                    }
+                }
+            }
+        }
+        &_img {
+            order: 1;
+            width: 100%;
+            height: 200px;
+            background: url(../img/products_solutions/bg.png);
+            background-size: cover;
+            background-position: 50%;
+        }
+    }
+    @media (min-width: 768px) {
+        &_block {
+            &_img {
+                height: 400px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 80px 0px;
+        &_block {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            &_text {
+                order: 1;
+                margin-top: 0px;
+                width: calc(50% - 30px);
+                & h3 {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+                & p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+            &_img {
+                order: 2;
+                width: calc(50% - 30px);
+                height: 280px;
+            }
+        }
+    }
+}
