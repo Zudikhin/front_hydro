@@ -1,0 +1,126 @@
+.completed_projects {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    padding: 64px 0px;
+  }
+  .completed_projects_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .completed_projects_block_text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 48px;
+  }
+  .completed_projects_block_text h3 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  .completed_projects_block_text h3 span {
+    color: #0e95d8;
+  }
+  .completed_projects_block_text p {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #282828;
+    margin-bottom: 20px;
+  }
+  .completed_projects_block_text a {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600;
+    position: relative;
+    color: #282828;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .completed_projects_block_text a::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #0e95d8;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .completed_projects_block_text a:hover {
+    color: #0e95d8;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .completed_projects_block_text a:hover::before {
+    bottom: -5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .completed_projects_block_img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    height: 200px;
+    background: url(../img/completed_projects/bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+  }
+  @media (min-width: 768px) {
+    .completed_projects_block_img {
+      height: 400px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .completed_projects {
+      padding: 80px 0px;
+    }
+    .completed_projects_block {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      position: relative;
+    }
+    .completed_projects_block_text {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      margin-top: 0px;
+      width: calc(50% - 30px);
+    }
+    .completed_projects_block_text h3 {
+      font-size: 35px;
+      line-height: 45px;
+    }
+    .completed_projects_block_text p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+    .completed_projects_block_img {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      width: calc(50% - 30px);
+      height: 280px;
+    }
+  }

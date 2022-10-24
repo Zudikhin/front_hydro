@@ -12,7 +12,7 @@
 
   <body>
 
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header_block">
           <div class="header_block_left">
@@ -54,29 +54,29 @@
               <ul class="header_block_mid_item_drop">
                 <li>
                   <a href="#">
-                    <img class="default" src="/img/header/sand_clock_white.png" alt="">
-                    <img class="hover" src="/img/header/sand_clock_black.png" alt="">
+                    <img class="default" src="img/header/sand_clock_white.png" alt="">
+                    <img class="hover" src="img/header/sand_clock_black.png" alt="">
                     <span>История</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="default" src="/img/header/magazine_white.png" alt="">
-                    <img class="hover" src="/img/header/magazine_black.png" alt="">
+                    <img class="default" src="img/header/magazine_white.png" alt="">
+                    <img class="hover" src="img/header/magazine_black.png" alt="">
                     <span>Блог и новости</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="default" src="/img/header/user_white.png" alt="">
-                    <img class="hover" src="/img/header/user_black.png" alt="">
+                    <img class="default" src="img/header/user_white.png" alt="">
+                    <img class="hover" src="img/header/user_black.png" alt="">
                     <span>Партнеры</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="default" src="/img/header/document_white.png" alt="">
-                    <img class="hover" src="/img/header/document_black.png" alt="">
+                    <img class="default" src="img/header/document_white.png" alt="">
+                    <img class="hover" src="img/header/document_black.png" alt="">
                     <span>Документация</span>
                   </a>
                 </li>
@@ -152,9 +152,9 @@
         </div>
       </div>
   
-    </header>
+    </header> -->
 
-    <!-- <header class="header_other">
+    <header class="header_other">
       <div class="container">
         <div class="header_other_block">
           <div class="header_other_block_left">
@@ -293,194 +293,77 @@
         </div>
       </div>
   
-    </header>	 -->
+    </header>	
 
-    <section class="main">
+    <section class="categories">
       <div class="container">
-        <div class="main_block">
-          <h1>i-Hydro</h1>
-          <p>Наша компания оказывает весь спектр услуг, связанных с разработкой и изготовлением нестандартного промышленного и мобильного оборудования. </p>
-        </div>
-        <div class="main_mouse"></div>
-      </div>
-    </section>
-
-    <section class="company">
-      <div class="container">
-        <div class="company_block">
-          <div class="company_block_feature">
-            <div class="company_block_feature_item">
-              <p>Разработка современных технических решений и продуктов</p>
+        <h1>
+          <span>Бренды</span>
+        </h1>
+        <div class="categories_block">
+          <div class="categories_block_filter">
+            <input type="text" id="my-search-input" placeholder="Поиск по названию">
+            
+            <div class="categories_block_filter_item filter-show filter-industries">
+              Отрасли деятельности
             </div>
-            <div class="company_block_feature_item">
-              <p>Консультация и экспертная помощь в выборе оборудования, запчастей</p>
+            <div id="filter-industries" class="filter-open categories_block_filter_item_body">
+              <ul class="catalog-filter">
+                <li data-filter="industries-9">Промышленный интернет вещей и система управления активами предприятия</li>
+                <li data-filter="industries-8">Экология и переработка</li>
+                <li data-filter="industries-7">Испытательные стенды и оборудование</li>
+                <li data-filter="industries-6">Строительство</li>
+                <li data-filter="industries-5">Машиностроение</li>
+                <li data-filter="industries-4">Производство и добыча</li>
+                <li data-filter="industries-3">Транспортировка и управление складом</li>
+                <li data-filter="industries-2">Краностроение</li>
+                <li data-filter="industries-1">Судостроение</li>
+                <li data-filter="industries-24">Сельское хозяйство</li>
+              </ul>
             </div>
-            <div class="company_block_feature_item">
-              <p>Разработка индивидуальных решений, системная интеграция</p>
+
+            <div class="categories_block_filter_item filter-show filter-ps">
+              Продукция и решения
             </div>
-          </div>
-          <div class="company_block_text">
-            <h3>Компания <span>«Ижорские Гидросистемы»</span></h3>
-            <p class="company_block_text_line">это системный интегратор, реализующий комплексное обслуживание предприятий, включающее создание оборудования и решений на основе отечественных и зарубежных комплектующих.</p>
-            <p class="company_block_text_default">Благодаря сильному инженерному составу, мы способны подключиться к решению задач, начиная от концепции, технологии и технического задания, заканчивая изготовлением и введением в эксплуатацию готового оборудования.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div id="filter-ps" class="filter-open categories_block_filter_item_body">
+              <ul class="catalog-filter">
+                <li data-filter="solutions-12">Решение 1</li>
+                <li data-filter="solutions-27">Продукт 1</li>
+                <li data-filter="solutions-13">Решение 2</li>
+              </ul>
+            </div>
 
-    <section class="work">
-      <div class="container">
-        <div class="work_block">
-          <h3 class="mob">Компания <span>ведёт работу в следующих</h3>
-          <h3 class="desktop">Компания <span>ведёт работу <br> в следующих</span> направлениях</h3>
-          <div class="work_block_list">
-            <a href="#" class="work_block_list_item">
-              <p>Промышленный интернет <br>
-                вещей и система управления <br>
-                активами предприятия 
-              </p>
-              <div class="work_block_list_item_img">
-                  <img src="img/company/1.svg" alt="">
-              </div>
-            </a>
-            <a href="#" class="work_block_list_item">
-              <p>Экология и переработка</p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/2.svg" alt="">
-              </div>
-            </a>
-            <a href="#" class="work_block_list_item">
-              <p>Испытательные стенды <br>
-                и оборудование </p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/3.svg" alt="">
-              </div>
-            </a> 
-            <a href="#" class="work_block_list_item">
-              <p>Строительство</p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/4.svg" alt="">
-              </div>
-            </a>  
-            <a href="#" class="work_block_list_item">
-              <p>Машиностроение</p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/5.svg" alt="">
-              </div>
-            </a>  
-            <a href="#" class="work_block_list_item">
-              <p>Производство и добыча</p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/6.svg" alt="">
-              </div>
-            </a>  
-            <a href="#" class="work_block_list_item">
-              <p>Транспортировка и <br>
-              управление складом</p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/7.svg" alt="">
-              </div>
-            </a>
-            <a href="#" class="work_block_list_item">
-              <p>Краностроение</p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/8.svg" alt="">
-              </div>
-            </a>
-            <a href="#" class="work_block_list_item">
-              <p>Судостроение</p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/9.svg" alt="">
-              </div>
-            </a>
-            <a href="#" class="work_block_list_item">
-              <p>Сельское хозяйство </p>
-              <div class="work_block_list_item_img">
-                <img src="img/company/10.svg" alt="">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="categories_block_filter_item filter-show filter-projects">
+              Продукция и решения
+            </div>
+            <div id="filter-projects" class="filter-open categories_block_filter_item_body">
+              <ul class="catalog-filter">
+                <li data-filter="projects-10" class="active">Проект 1</li>
+                <li data-filter="projects-26">Проект 2</li>
+              </ul>
+            </div>
 
-    <section class="products_solutions">
-      <div class="container">
-        <div class="products_solutions_block">
-          <div class="products_solutions_block_text">
-            <h3><span>Продукция и</span> решения</h3>
-            <p>В данном разделе можно найти информацию как о концепциях, так и о готовых технических решениях "под ключ". </p>
-            <p>В данном разделе также представлена продукция различных партнёрских брендов и производителей. </p>
-            <a href="#">Перейти в раздел</a>
           </div>
-          <div class="products_solutions_block_img"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="completed_projects">
-      <div class="container">
-        <div class="completed_projects_block">
-          <div class="completed_projects_block_text">
-            <h3>Реализованные <span>проекты</span></h3>
-            <p>В данном разделе публикуются проекты, сделанные нашей компанией целиком или при активном соучастии. </p>
-            <p>Под проектом мы понимаем как изготовление конкретного оборудования, так и комплекса, имеющего разное количество оборудования, например цех, завод. </p>
-            <a href="#">Перейти в раздел</a>
-          </div>
-          <div class="completed_projects_block_img"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="distributor">
-      <div class="container">
-        <div class="distributor_block">
-          <h3>«Ижорские Гидросистемы» - <span>официальный интегратор и дистрибьютор</span> следующих брендов</h3>
-          <p class="distributor_block_text">Применение, инсталляцию и внедрение своего оборудования нам доверяют ведущие отечественные и зарубежные производители</p>
-          <div class="distributor_block_list">
-            <a class="distributor_block_list_item" href="#">
-              <div class="distributor_block_list_item_img">
-                <img src="img/distributor/1.png" alt="">
+          <div class="categories_block_grid">
+            <a href="#" class="item categories_block_grid_item" data-tags="industries-1, industries-6, projects-10, solutions-12, solutions-13" data-art="Novotechnik Siedle Gruppe">
+              <div class="categories_block_grid_item_img">
+                <img src="img/distributor/1.png">
               </div>
               <div class="distributor_block_list_item_text">
                 <p>Novotechnik Siedle Gruppe</p>
               </div>
             </a>
-            <a class="distributor_block_list_item" href="#">
-              <div class="distributor_block_list_item_img">
-                <img src="img/distributor/2.png" alt="">
+            <a href="#" class="item categories_block_grid_item" data-tags="industries-7, industries-2, projects-10, solutions-13" data-art="msisu">
+              <div class="categories_block_grid_item_img">
+                <img src="img/distributor/2.png">
               </div>
               <div class="distributor_block_list_item_text">
                 <p>msisu</p>
               </div>
             </a>
-            <a class="distributor_block_list_item" href="#">
-              <div class="distributor_block_list_item_img">
-                <img src="img/distributor/1.png" alt="">
-              </div>
-              <div class="distributor_block_list_item_text">
-                <p>Novotechnik Siedle Gruppe</p>
-              </div>
-            </a>
-            <a class="distributor_block_list_item" href="#">
-              <div class="distributor_block_list_item_img">
-                <img src="img/distributor/2.png" alt="">
-              </div>
-              <div class="distributor_block_list_item_text">
-                <p>msisu</p>
-              </div>
-            </a>
-            <a class="distributor_block_list_item" href="#">
-              <div class="distributor_block_list_item_img">
-                <img src="img/distributor/1.png" alt="">
-              </div>
-              <div class="distributor_block_list_item_text">
-                <p>Novotechnik Siedle Gruppe</p>
-              </div>
-            </a>
-            <a class="distributor_block_list_item" href="#">
-              <div class="distributor_block_list_item_img">
-                <img src="img/distributor/2.png" alt="">
+            <a href="#" class="item hidden categories_block_grid_item" data-tags="" data-art="бренд">
+              <div class="categories_block_grid_item_img">
+                <img src="img/distributor/2.png">
               </div>
               <div class="distributor_block_list_item_text">
                 <p>msisu</p>

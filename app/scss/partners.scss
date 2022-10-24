@@ -1,0 +1,85 @@
+.partners {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #F8F8F8;
+    padding: 64px 0px;
+    &_block {
+        & h1 {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 40px;
+            line-height: 48px;
+            color: #282828;
+            font-weight: 600;
+            & span {
+                color: #0e95d8;
+            }
+        }
+        &_list {
+            &_item {
+                margin-top: 80px;
+                position: relative;
+                &_img {
+                    background-color: #e5e8ec;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & img {
+                        max-width: calc(100% - 100px);
+                        max-height: 200px;
+                        object-fit: cover;
+                    }
+                }
+                &_text {
+                    & h5 {
+                        font-family: "Montserrat", Sans-serif;
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: #282828;
+                        font-weight: 600;
+                        margin-top: 24px;
+                    }
+                    & p {
+                        font-family: "Montserrat", Sans-serif;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #282828;
+                        margin-top: 24px;
+                    }
+                    & a {
+                        font-family: "Montserrat", Sans-serif;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #0e95d8;
+                        margin-top: 24px;
+                        text-decoration: none;
+                        border-bottom: 1.5px solid #0e95d8;
+                        transition: all .4s ease;
+                        display: inline-block;
+                        margin-top: 10px;
+                        transition: all .4s ease;
+                        &:hover {
+                            color: #282828;
+                            border-color: #282828;
+                            transition: all .4s ease;
+                        }
+                    }
+                }
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 1.5px;
+                    position: absolute;
+                    left: 0px;
+                    top: -40px;
+                    background-color: #d6dae2;
+                }
+                &:first-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

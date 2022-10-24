@@ -1,0 +1,72 @@
+.documentation {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #F8F8F8;
+    padding: 64px 0px;
+    &_block {
+        & h1 {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 40px;
+            line-height: 48px;
+            color: #282828;
+            font-weight: 600;
+            & span {
+                color: #0e95d8;
+            }
+        }
+        &_list {
+            margin-top: 40px;
+            &_item {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                & img {
+                    width: 30px;
+                }
+                &_text {
+                    margin-left: 20px;
+                    & p {
+                        font-family: "Montserrat", Sans-serif;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #282828;
+                        transition: all .4s ease;
+                    }
+                    & span {
+                        font-family: "Montserrat", Sans-serif;
+                        font-size: 11px;
+                        line-height: 20px;
+                        color: #282828;
+                        opacity: 0.6;
+                        transition: all .4s ease;
+                    }
+                }
+                &:hover {
+                    & .documentation_block_list_item_text p {
+                        color: #0e95d8;
+                        transition: all .4s ease;
+                    }
+                    & .documentation_block_list_item_text span {
+                        color: #0e95d8;
+                        transition: all .4s ease;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 80px 0px;
+        &_block {
+            & h1 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            &_list {
+                margin-top: 70px;
+                &_item {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
